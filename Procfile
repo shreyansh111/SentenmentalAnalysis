@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run iris-app-diazonic.py
+web: sh setup.sh && streamlit run major_project.py
