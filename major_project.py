@@ -20,7 +20,7 @@ st.subheader("SENTIMENT ANALYSIS OF REVIEWS")
 dframe = user_input()
 #st.write(dframe)
 
-df=pd.read_csv("/content/drive/My Drive/Colab Notebooks/training.1600000.processed.noemoticon.csv",encoding='latin-1', names = ["Score", "id", "date", "flag", "userid", "Sentiment"], header = None ) 
+df=pd.read_csv("https://drive.google.com/file/d/1VWfM7uwUWWSgwiSo86vdUFrgygpBgb0G/view?usp=sharing",encoding='latin-1', names = ["Score", "id", "date", "flag", "userid", "Sentiment"], header = None ) 
 df =df.drop(['id','date','flag','userid'], axis = 1)
 df['Score'] = df['Score'].replace([4],"Positive")
 df['Score'] = df['Score'].replace([0],"Negative")
